@@ -1,0 +1,1578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-2{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 2rem 0;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem ;
+    border-bottom: solid gray 1px;
+}
+
+header nav .left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .left-nav h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header nav .left-nav h1 img{
+    width: 3rem;
+    height: 3rem;
+}
+
+header nav .left-nav input[type=text]{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    width: 15rem;
+    height: 2.4rem;
+    padding: 0.4rem;
+    border: gray solid 1px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    text-align: center;
+    border-right: none;
+}
+
+input[type=text]{
+    outline: none;
+}
+
+header nav .left-nav button{
+    padding: 0.5rem;
+    background-color: white;
+    border: gray solid 1px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: none;
+}
+
+header nav .left-nav button img{
+    width: 1.1rem;
+    height: auto;
+}
+
+header nav .right-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .right-nav a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    padding:0.5rem 0.8rem;
+    border-radius: 20px;
+}
+
+header nav .right-nav a img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+header nav .right-nav a:hover{
+    border: black solid;
+    color: red;
+}
+
+header nav .right-nav button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 0.8rem;
+    border: none;
+}
+
+header nav .right-nav button:hover{
+    background-color: red;
+}
+
+header main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+header main h1{
+    width: 100%;
+    text-align: start;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header main h1 span{
+    color: red;
+}
+
+header main .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header main .list a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border:black solid 2px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+header main .list a:hover{
+    background-color: rgb(51, 223, 161);
+    border: none;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+header main .list a img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.top-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top-sec .walpaper{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    height: 440px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-sec .walpaper .new-1{
+    width: 800px;
+    height: 440px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: .5s ease;
+}
+
+.top-sec .walpaper .new-2{
+    width: 500px;
+    height: 220px;
+    border-top-right-radius: 25px;
+    transition: .5s ease;
+}
+
+.top-sec .walpaper .new-3{
+    width: 500px;
+    height: 220px;
+    border-bottom-right-radius: 25px;
+    transition: .5s ease;
+}
+
+.top-sec .walpaper .new-1:hover{
+    opacity: 0.7;
+}
+
+.top-sec .walpaper .new-2:hover{
+    opacity: 0.7;
+}
+
+.top-sec .walpaper .new-3:hover{
+    opacity: 0.7;
+}
+
+.top-sec h6{
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .5s ease;
+    margin-top: 1rem;
+}
+
+.top-sec h6:hover{
+    text-decoration: underline solid black;
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.intro .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.intro .info h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.intro .info p{
+    font-size: 1.2rem;
+    font-family: 500;
+    margin-top: 1rem;
+}
+
+.intro .map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff5d5d;
+    border-radius: 25px;
+    width: 40%;
+    text-align: center;
+}
+
+.intro .map img{
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius: 25px;
+    border: black solid 1px;
+}
+
+.intro .map h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.intro .map p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.intro .map a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.8rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.intro .map a:hover{
+    opacity: 0.7;
+}
+
+.advice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.advice .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice .heading .liti{
+    width: 30rem;
+    height: 0.1rem;
+    background-color: black;
+}
+
+.advice .heading h1{
+    padding:0 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.advice .advice-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+
+.advice .advice-info a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color:white;
+    border: #e0e0e0 solid;
+    border-radius: 20px;
+    transition: .5s;
+    padding: 0.3rem 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.advice .advice-info a img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.advice .advice-info a:hover{
+    text-decoration: underline solid black;
+    border: black solid;
+}
+
+
+.play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 0; 
+}
+
+.play .play-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play .play-heading h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.play .play-heading .liti-2{
+    width: 24rem;
+    height: 0.1rem;
+    background-color: black;
+}
+
+.play .play-bar{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.play .play-bar .left-bar{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 0.5rem;
+}
+
+.play .play-bar .left-bar h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.play .play-bar .left-bar p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.play .play-bar .left-bar a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: black;
+    transition: .5s;
+    margin-top: 1rem;
+}
+
+.play .play-bar .left-bar a:hover{
+    text-decoration: underline black solid;
+}
+
+.play .play-bar .multiple-items{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play .play-bar .multiple-items .play-card{
+    width: 300px;
+    height: 20rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    flex-direction: column;
+    transition: .5s ease;
+    margin: 0 0.5rem;
+    background-color: #e0e0e0;
+}
+
+.play .play-bar .multiple-items .play-card:hover{
+    opacity: 0.7;
+    text-decoration: underline black solid;
+}
+
+.play .play-bar .multiple-items .play-card img{
+    width: 100%;
+    height: 12rem;
+}
+
+.play .play-bar .multiple-items .play-card h4{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+.play .play-bar .multiple-items .play-card .dill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.play .play-bar .multiple-items .play-card .dill h6{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.play .play-bar .multiple-items .play-card .dill img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.play .play-bar .multiple-items .play-card p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.play .play-bar .multiple-items .play-card a{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -17rem;
+    left: 16rem;
+    transition: .5s ;
+}
+
+.play .play-bar .multiple-items .play-card a:hover{
+    background-color: red;
+}
+
+.play .play-bar .multiple-items .play-card a img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.rest{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rest .left-rest{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 30%;
+}
+
+.rest .left-rest h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.rest .left-rest p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.rest .left-rest a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: .5s ease;
+}
+
+.rest .left-rest a:hover{
+    text-decoration: black underline solid;
+}
+
+.rest .multiple-items{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rest .multiple-items .rest-card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s ease;
+    margin: 0 0.5rem;
+    background-color: #e0e0e0;
+}
+
+.rest .multiple-items .rest-card:hover{
+    opacity: 0.7;
+    text-decoration: underline black solid;
+}
+
+.rest .multiple-items .rest-card img{
+    width: 100%;
+    height: 194px;
+}
+
+.rest .multiple-items .rest-card h4{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+.rest .multiple-items .rest-card .dill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.rest .multiple-items .rest-card .dill h6{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.rest .multiple-items .rest-card .dill img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.rest .multiple-items .rest-card h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+ 
+.rest .multiple-items .rest-card a{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -17rem;
+    left: 16rem;
+    transition: .5s ;
+}
+
+.rest .multiple-items .rest-card a:hover{
+    background-color: red;
+}
+
+.rest .multiple-items .rest-card a img{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.food{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.food .left-food{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 30%;
+}
+
+.food .left-food h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.food .left-food p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.food .left-food a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: .5s ease;
+    margin-top: 1rem;
+}
+
+.food .left-food a:hover{
+    text-decoration: black solid underline;
+}
+
+.food .multiple-items{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.food .multiple-items .food-card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    transition: .5s ease;
+    margin: 0 0.5rem;
+    background-color: #e0e0e0;
+}
+
+.food .multiple-items .food-card:hover{
+    opacity: 0.7;
+    text-decoration: underline black solid;
+}
+
+.food .multiple-items .food-card img{
+    width: 100%;
+    height: 194px;
+}
+
+.food .multiple-items .food-card h4{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+
+.food .multiple-items .food-card .dill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+}
+
+.food .multiple-items .food-card .dill img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.food .multiple-items .food-card .dill h6{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.food .multiple-items .food-card h5{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.food .multiple-items .food-card a{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -18rem;
+    left: 16rem;
+    transition: .5s ;
+}
+
+.food .multiple-items .food-card a:hover{
+    background-color: red;
+}
+
+.food .multiple-items .food-card a img{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.traveler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.traveler .traveler-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.traveler .traveler-heading .dori{
+    width: 28rem;
+    height: 0.2rem;
+    background-color: black;
+}
+
+.traveler .traveler-heading h1{
+    font-size: 2rem;
+    font-weight: bold;
+    padding:0 0.3rem ;
+}
+
+.traveler .traveler-info{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.traveler .traveler-info .travel-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    cursor: pointer;
+    background-color: #faf1ed;
+    padding-bottom: 1rem;
+}
+
+.traveler .traveler-info .travel-card .top-pic{
+    width: 100%;
+    height: 235px;
+    transition: .5s ease;
+}
+
+.traveler .traveler-info .travel-card .top-pic:hover{
+    opacity: 0.7;
+}
+
+.traveler .traveler-info .travel-card .tourist{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    top: -2rem;
+    transition: .5s ease;
+}
+
+.traveler .traveler-info .travel-card .tourist:hover{
+    opacity: 0.7;
+}
+
+.traveler .traveler-info .travel-card h4{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: -1rem;
+}
+
+.traveler .traveler-info .travel-card h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.traveler .traveler-info .travel-card h1:hover{
+    text-decoration: black solid underline;
+}
+
+.traveler .traveler-info .travel-card p{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+}
+
+.traveler .traveler-info .travel-card .dill{
+    margin-top: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.traveler .traveler-info .travel-card h6{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #faf1ed;
+    margin-top: 2rem;
+}
+
+.news .left-news{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+}
+
+.news .left-news h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.news .left-news a{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #0e2c23;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+
+.news .left-news a:hover{
+    opacity: 0.7;
+}
+
+.news img{
+    width: 40%;
+    height: 15rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+
+.forum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.forum .forum-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.forum .forum-heading .doro{
+    width: 28rem;
+    height: 0.2rem;
+    background-color: black;
+}
+
+.forum .forum-heading h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.forum .top-forums{
+    width: 15rem;
+}
+
+.forum .forum-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.forum .forum-info .forum-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 13rem;
+    background-color: #faf1ed;
+    border-radius: 25px;
+    padding:1rem 0.5rem;
+    text-align: center;
+}
+
+.forum .forum-info .forum-card h1{
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .5 ease;
+    width: 80%;
+} 
+
+.forum .forum-info .forum-card h1:hover{
+    text-decoration: underline solid black;
+}
+
+.forum .forum-info .forum-card .for{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.forum .forum-info .forum-card .for img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.forum .forum-info .forum-card .for h4{
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.forum .forum-info .forum-card .for h4:hover{
+    text-decoration: underline solid black;
+}
+
+footer .second-foot{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer .second-foot .left-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .second-foot .left-bar .logo img{
+    width: 3rem;
+    height: 3rem;
+}
+
+footer .second-foot .left-bar .logo-text h6{
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+footer .second-foot .left-bar .logo-text a{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: .5s ease;
+    padding: 0.2rem;
+}
+
+footer .second-foot .left-bar .logo-text a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+footer .second-foot .right-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+footer .second-foot .right-bar input[type=text]{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    padding: 0 0.3rem;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+footer .second-foot .right-bar button{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: 0.4rem;
+    border-radius: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+footer .second-foot .right-bar button:hover{
+    opacity: 0.7;
+    background-color: blue;
+}
+
+footer .last-foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .last-foot p{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: gray;
+    width: 50%;
+}
+
+footer .last-foot .contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+footer .last-foot .contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+footer .last-foot .contact a:hover{
+    color: blue;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf1ed;
+    cursor: pointer;
+    padding-bottom:3rem;
+    margin-top: 2rem;
+}
+
+/* media quarry */
+
+
+@media(max-width:1350px){
+    .play .play-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .play .play-bar .left-bar{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .play .play-bar .multiple-items{
+        width: 90%;
+    }
+    .rest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .rest .left-rest{
+        align-items: center;
+        justify-content: center;
+    }
+    .rest .multiple-items{
+        width: 90%;
+    }
+    .food{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .food .left-food{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .food .multiple-items{
+        width: 90%;
+    }
+    .traveler .traveler-info{
+        max-width: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .traveler .traveler-info .travel-card{
+        margin-top: 1rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+    .forum .forum-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .forum .forum-info .forum-card{
+        margin-top: 1rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+    .top-sec .walpaper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        max-width: 1300px;
+    }
+    .top-sec .walpaper .new-1{
+        width: 100%;
+        border-radius: 0;
+    }
+    .top-sec .walpaper .new-2{
+        width: 50%;
+        border-radius: 0;
+    }
+    .top-sec .walpaper .new-3{
+        border-radius: 0;
+        width: 50%;
+    }
+    .top-sec .walpaper {
+        width: 100%;
+        height: auto;
+    }
+    .top-sec{
+        padding-top: 0;
+    }
+    header {
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width:1000px){
+    footer .second-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .last-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    footer .last-foot p{
+        width: 80%;
+    }
+    header main .list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    header main .list a{
+        font-size: 1rem;
+        font-size: 500;
+        padding: 0.3rem 0.5rem;
+        border: none;
+    }
+    .intro .info h1{
+        font-size: 1.4rem;
+    }
+    .intro .info p{
+        font-size: 0.8rem;
+    }
+    .intro .map h1{
+        font-size: 1rem;
+    }
+    .intro .map p{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .advice .heading .liti{
+        width: 18rem;
+    }
+    .advice .heading h1{
+        font-size: 1.4rem;
+    }
+    .advice .advice-info{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-flow: row wrap;
+    }
+    .advice .advice-info a{
+        margin: 0.3rem ;
+    }
+    .play{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .play .play-heading .liti-2{
+        width: 15rem;
+    }
+    .play .play-heading h1{
+        font-size: 1.4rem;
+    }
+    .play .play-bar .left-bar{
+        width: 80%;
+    }
+    .play .play-bar .multiple-items .play-card a{
+        top: -16rem;
+        left: 14rem;
+    }
+    .play .play-bar .multiple-items{
+        width: 100%;
+    }
+    .rest .left-rest{
+        width: 80%;
+        text-align: center;
+    }
+    .rest .multiple-items .rest-card a{
+        top: -16rem;
+        left: 14rem;
+    }
+    .rest .multiple-items{
+        width: 100%;
+    }
+    .food .left-food{
+        width: 80%;
+        text-align: center;
+    }
+    .food .multiple-items .food-card a{
+        top: -17rem;
+        left: 14rem;
+    }
+    .food .multiple-items{
+        width: 100%;
+    }
+    .traveler .traveler-heading .dori{
+        width: 15rem;
+    }
+    .traveler .traveler-heading h1{
+        font-size: 1.4rem;
+    }
+    .forum .forum-heading .doro{
+        width: 15rem;
+    }
+    .forum .forum-heading h1{
+        font-size: 1.4rem;
+    }
+    .forum .top-forums{
+        width: 10rem;
+    }
+    .home .home-heading .doro{
+        width: 14rem;
+    }
+    .home .home-heading h1{
+        font-size: 1.4rem;
+    }
+    .container{
+        max-width: 1000px;
+    }
+}
+
+@media(max-width:850px){
+    header nav .left-nav input{
+        display: none;
+    }
+    header nav .left-nav button{
+        display: none;
+    }
+    .home .load a{
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    .home .home-heading .doro{
+        width: 10rem;
+    }
+    .news .left-news{
+        width: 50%;
+    }
+    .news img{
+        width: 50%;
+    }
+    .home .multiple-items {
+        display: none;
+    }
+    .home h3{
+        display: none;
+    }
+}
+
+@media(max-width:700px){
+    .advice .heading .liti{
+        width: 14rem;
+    }
+    .advice .heading h1{
+        font-size: 1rem;
+    }
+    .play .play-heading .liti-2{
+        width: 10rem;
+    }
+    .play .play-heading h1{
+        font-size: 1rem;
+    }
+    .news{
+        display: flex;
+        flex-direction:  column-reverse;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+    }
+    .news img{
+        width: 100%;
+        border-radius: 25px;
+    }
+    .news .left-news {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:570px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro .info{
+        width: 100%;
+        text-align: center;
+    }
+    .intro .map{
+        width: 60%;
+        margin-top: 1rem;
+    }
+    .advice .heading h1{
+        padding: 0;
+    }
+    .advice .heading .liti{
+        width: 10rem;
+    }
+    .play .play-bar .multiple-items .play-card h4{
+        font-size: 0.8rem;
+    }
+    .play .play-bar .multiple-items .play-card .dill img{
+        width: 0.7rem;
+    }
+    .play .play-bar .multiple-items .play-card .dill h6{
+        font-size: 0.6rem;
+    }
+    .play .play-bar .multiple-items .play-card p{
+        font-size: 0.7rem;
+    }
+    .rest .multiple-items .rest-card h4{
+        font-size: 0.8rem;
+    }
+    .rest .multiple-items .rest-card .dill img{
+        width: 0.6rem;
+    }
+    .rest .multiple-items .rest-card .dill h6{
+        font-size: 0.6rem;
+    }
+    .rest .multiple-items .rest-card h3{
+        font-size: 0.7rem;
+    }
+    .rest .multiple-items .rest-card a{
+        display: none;
+    }
+    .food .multiple-items .food-card h4{
+        font-size: 0.8rem;
+    }
+    .food .multiple-items .food-card .dill img{
+        width: 0.7rem;
+    }
+    .food .multiple-items .food-card .dill h6{
+        font-size: 0.7rem;
+    }
+    .food .multiple-items .food-card  h5{
+        font-size: 0.8rem;
+    }
+    .food .multiple-items .food-card a{
+        display: none;
+    }
+    .traveler .traveler-heading .dori{
+        display: none;
+    }
+    .forum .forum-heading .doro{
+        display: none;
+    }
+    .home .home-heading .doro{
+        display: none;
+    }
+    .home .home-heading h1{
+        font-size: 1rem;
+    }
+    .home .multiple-items{
+        display: none;
+    }
+    .home h3{
+        display: none;
+    }
+    header nav .right-nav button{
+        display: none;
+    }
+    header nav .right-nav a{
+        font-size: 0.9rem;
+    }
+    header nav .right-nav a img{
+        width: 1.5rem;
+    }
+    header {
+        padding-top: 1rem;
+    }
+    header main .list a{
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:480px){
+    header nav .right-nav a{
+        padding: 0 0.1rem;
+    }
+    header main h1{
+        font-size: 1.4rem;
+    }
+    header nav .left-nav h1{
+        font-size: 1.4rem;
+    }
+    .intro .map{
+        width: 70%;
+    }
+    .advice .heading .liti{
+        display: none;
+    }
+    .play .play-heading .liti-2{
+        display: none;
+    }
+    .play .play-bar .multiple-items .play-card p{
+        display: none;
+    }
+    .food .multiple-items .food-card h5{
+        display: none;
+    }
+    .food .multiple-items .food-card .dill h6{
+        display: none;
+    }
+}
+
+@media(max-width:400px){
+    footer .second-foot .right-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        max-width: 300px;
+    }
+    footer .second-foot .right-bar input{
+        margin-top: 1rem;
+    }
+    .play .play-bar .multiple-items .play-card .dill{
+        display: none;
+    }
+    .rest .multiple-items .rest-card .dill{
+        display: none;
+    }
+    .rest .multiple-items .rest-card h3{
+        display: none;
+    }
+    .food .multiple-items .food-card .dill{
+        display: none;
+    }
+}
+/* end */

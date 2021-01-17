@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 1rem 0;
+}
+
+header .top-bar{
+    background-color: #faf1ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .top-bar h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: change-color 10s ease-in-out infinite;
+}
+
+@keyframes change-color{
+    0%{
+        color: red;
+    }
+    25%{
+        color: green;
+    }
+    50%{
+        color: blueviolet;
+    }
+    75%{
+        color: maroon;
+    }
+    100%{
+        color: blue;
+    }
+}
+
+header .top-bar h1 span{
+    font-size: 1rem;
+    font-weight: 400;
+    animation: none;
+    color: black;
+}
+
+header nav{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header nav .left-nav{
+    width: 13rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav .left-nav img{
+    width: 4rem;
+    height: 4rem;
+}
+
+header nav .left-nav h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+header nav .right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 28rem;
+} 
+
+header nav .right-nav a{
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+header nav .right-nav a:hover{
+    border: black solid;
+    color: red;
+}
+
+header nav .right-nav a img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+header nav .right-nav .button{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    transition: .5s ease;
+}
+
+
+header nav .right-nav .button:hover{
+    opacity: 0.5;
+}
+
+header main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+header main a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border:black solid 2px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    transition: .5s  ease;
+}
+
+header main a:hover{
+    background-color: rgb(51, 223, 161);
+    border: none;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+header main a img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.search{
+    margin-top: 1rem;
+    border-radius: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5rem;
+    background: url(../image/top.svg) #c9f2e3;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.search h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.search .searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+    border-radius: 20px;
+}
+
+.search .searchbar button{
+    background-color: white;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 1.15rem;
+    transition: .5s ease;
+}
+
+.search .searchbar button:hover{
+    background-color: yellow;
+}
+
+.search .searchbar input[type=search]{
+    width: 40rem;
+    height: 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0.2rem 1rem;
+}
+
+input[type=search]:focus{
+    outline: none;
+}
+
+.news{
+   background-color: #faf1ed;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content:space-between;
+   height: 40vh; 
+   border-radius: 20px;
+   margin-top: 2rem;
+   cursor: pointer;
+}
+
+.news .left-news{
+    width: 25rem;
+    text-align: start;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.news .left-news h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.news .left-news a{
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #0e2c23;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    transition: .5s ease;
+}
+
+.news .left-news a:hover{
+    opacity: 0.8;
+}
+
+.news img{
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.reco{
+    position: relative;
+    left: 80rem;
+    top: -5rem;
+}
+
+.trip{
+   background-color: #faf1ed;
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+}
+
+.trip .more{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: .5s ease;
+    top: -4rem;
+}
+
+.trip .more:hover{
+    opacity: 0.8;
+}
+
+.trip .trip-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.trip .trip-info .trip-card{
+    width: 25rem;
+    height: 28rem;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: white;
+    transition: .5s ease;
+}
+
+.trip .trip-info .trip-card:hover{
+    opacity: 0.7;
+}
+
+.trip .trip-info .trip-card img{
+    width: 100%;
+    height: 18rem;
+}
+
+.trip .trip-info .trip-card h1{
+    font-size: 1.2rem;
+    font-weight: 6rem;
+    margin-top: 2rem;
+}
+
+.trip .trip-info .trip-card h1 span:hover{
+    text-decoration: underline black solid;
+    color: red;
+}
+
+.trip .trip-info .trip-card a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.trip .trip-info .trip-card a:hover{
+    text-decoration: black underline solid;
+    color: red;
+}
+
+.trip .trip-info .trip-card .dill{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.4rem;
+    top: -23rem;
+    left: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.trip .trip-info .trip-card .dill:hover{
+    background-color: red;
+}
+
+.trip .trip-info .trip-card .dill img{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.trip .trip-info .trip-card .dill-2{
+    position: relative;
+    width: 2.9rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.4rem;
+    top: -25rem;
+    left: 10.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+
+.trip .trip-info .trip-card .dill-2 img{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.trip .trip-info .trip-card .dill-2:hover{
+    background-color: red;
+}
+
+.tour{
+    padding: 2rem 0;
+}
+
+.tour .tour-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour .tour-heading .line{
+    height: 3px;
+    width: 27rem;
+    background-color: black;
+}
+
+.tour .tour-heading h1{
+    padding: 0 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tour h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+    animation: change-color 10s ease-in-out;
+    margin-top: 2rem;
+}
+
+.tour .tour-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.tour .tour-info .tour-card{
+    width: 20rem;
+    height: 20rem;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.tour .tour-info .tour-card:hover{
+    opacity: 0.7;
+}
+
+.tour .tour-info .tour-card img{
+    width: 100%;
+    height: 15rem;
+}
+
+.tour .tour-info .tour-card h1{
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: .5s ease;
+    margin-top:1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.tour .tour-info .tour-card h1:hover{
+    text-decoration: underline solid black;
+}
+
+.tour .tour-info .tour-card .heart{
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -18rem;
+    left: 17rem;
+    background-color: white;
+    transition: .5s ease;
+}
+
+.tour .tour-info .tour-card .heart img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.tour .tour-info .tour-card .heart:hover{
+    background-color: red;
+}
+
+.award{
+    background-color: #004f32;
+    cursor: pointer;
+}
+
+.award .award-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.award .award-info .left-award{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.award .award-info .left-award img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.award .award-info .left-award h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    width: 12rem;
+}
+
+.award .award-info .left-award a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    transition: .5s ease;
+    padding: 1rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+}
+
+.award .award-info .left-award a:hover{
+    opacity: 0.7;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf1ed;
+    cursor: pointer;
+    padding-bottom:3rem;
+}
+
+footer .top-foot{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+footer .top-foot .left-foot{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 40rem;
+}
+
+footer .top-foot .left-foot .foot{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    line-height: 1.5rem;
+}
+
+footer .top-foot .left-foot .foot p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+footer .top-foot .left-foot .foot a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: .5s ease;
+    text-transform: capitalize;
+}
+
+footer .top-foot .left-foot .foot a:hover{
+    text-decoration: underline black solid;
+}
+
+footer .top-foot .right-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 1.4rem;
+}
+
+footer .top-foot .right-foot p{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+footer .top-foot .right-foot p span{
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+footer .top-foot .right-foot p span:hover{
+    text-decoration: black solid underline;
+}
+
+footer .second-foot{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer .second-foot .left-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .second-foot .left-bar .logo img{
+    width: 3rem;
+    height: 3rem;
+}
+
+footer .second-foot .left-bar .logo-text h6{
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+}
+
+footer .second-foot .left-bar .logo-text a{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: .5s ease;
+    padding: 0.2rem;
+}
+
+footer .second-foot .left-bar .logo-text a:hover{
+    color: blue;
+    text-decoration: none;
+}
+
+footer .second-foot .right-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+footer .second-foot .right-bar input[type=text]{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    padding: 0 0.3rem;
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+footer .second-foot .right-bar button{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: 0.4rem;
+    border-radius: 20px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+footer .second-foot .right-bar button:hover{
+    opacity: 0.7;
+    background-color: blue;
+}
+
+footer .last-foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .last-foot p{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: gray;
+    width: 50%;
+}
+
+footer .last-foot .contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+footer .last-foot .contact a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+footer .last-foot .contact a:hover{
+    color: blue;
+}
+
+/* media quarry */
+
+@media(max-width:1300px){
+    .tour .tour-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        max-width: 1300px;
+    }
+    .tour .tour-info a{
+        width: 500px !important;
+        height: auto !important;
+    }
+    .tour .tour-info .tour-card .heart{
+        left: 28rem;
+        top: -18rem;
+    }
+    .trip .trip-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        max-width: 1000px;
+    }
+    .trip .trip-info .trip-card{
+        margin: 0.5rem 0.4rem;
+    }
+}
+
+@media(max-width:1150px){
+    header main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        max-width: 1000px;
+    }
+    header main a{
+        font-size: 1rem;
+        padding: 0.5rem;
+        border: none;
+    }
+    .tour .tour-heading .line{
+        width: 15rem;
+    }
+    footer .second-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .second-foot .left-bar{
+        width: 100%;
+        text-align: center;
+    }
+    footer .second-foot .right-bar{
+        width: 100%;
+        margin-top: 0.3rem;
+    }
+    footer .last-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    footer .last-foot p{
+        width: 100%;
+        text-align: center;
+    }
+    footer .last-foot .contact{
+        width: 20rem;
+    }
+    .award .award-info{
+        width: 100%;
+    }
+    .award .award-info .left-award{
+        width: 20%;
+    }
+    .award .award-info .award-2{
+        width: 80%;
+        height: 100% !important;
+    }
+}
+
+@media(max-width:1000px){
+    .award .award-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .award .award-info .left-award{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .award .award-info .left-award h1{
+        font-size: 1rem;
+    }
+    .award .award-info .left-award a{
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+    .award .award-info .award-2{
+        width: 100%;
+    }
+    footer .top-foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .top-foot .left-foot{
+        width: 100%;
+    }
+    footer .top-foot .right-foot{
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tour .tour-info .tour-card{
+        width: 600px !important;
+    }
+    .tour .tour-info .tour-card .heart{
+        top: -18rem;
+        left: 34rem;
+    }
+    .news{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem;
+        height: auto;
+    }
+    .news img{
+        width: 100%;
+        border-radius: 25px;
+    }
+    .news .left-news{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    .tour .tour-heading .line{
+        display: none;
+    }
+}
+
+@media(max-width:650px){
+    .tour .tour-info a .heart{
+        top: -18rem;
+        left: 20rem;
+    }
+    header nav .right-nav .button{
+        display: none;
+    }
+    header nav .right-nav {
+        width: 50%;
+    }
+    .search .searchbar button{
+        display: none;
+    }
+    .search .searchbar input{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:585px){
+    .tour .tour-info .tour-card .heart{
+        top: -18rem;
+        left: 30rem;
+    }
+    .search .searchbar input{
+        display: none;
+    }
+    .search h1{
+        font-size: 1.5rem;
+        color: white;
+    }
+    .news .left-news{
+        text-align: center;
+    }
+    .tour .tour-info .tour-card{
+        width: 400px;
+    }
+    .tour .tour-info .tour-card .heart{
+        top: -18rem;
+        left: 28rem;
+    }
+    .award .award-info .left-award{
+        max-width: 525px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        flex-direction: row;
+    }
+    .award .award-info .left-award img{
+        width: 12rem;
+    }
+    header nav .right-nav a{
+        padding: 0;
+    }
+}
+
+@media(max-width:490px){
+    .tour .tour-info .tour-card .heart{
+        display: none;
+    }
+    .award .award-info .left-award{
+        display: none;
+    }
+    footer .top-foot .left-foot .foot a{
+        font-size: 0.8rem;
+    }
+    footer .top-foot .left-foot .foot p{
+        font-size: 0.9rem;
+    }
+    footer .top-foot .left-foot .foot{
+        line-height: 1.3rem;
+    }
+    header main a img {
+        display: none;
+    }
+    header main a{
+        animation: jaat 10s ease-in-out infinite;
+    }
+    .search h1{
+        animation: jaat 10s ease-in-out infinite;
+    }
+}
+
+@keyframes jaat{
+    0%{
+        color: red;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color:black;
+    }
+    60%{
+        color: violet;
+    }
+    80%{
+        color: green;
+    }
+    100%{
+        color: dodgerblue;
+    }
+}
+
+@media(max-width:450px){
+    header nav .left-nav h1{
+        display: none;
+    }
+    header nav .left-nav{
+        width: 15%;
+    }
+    header .top-bar{
+        display: none;
+    }
+    header {
+        padding: 0;
+    }
+}
