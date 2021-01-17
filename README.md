@@ -16,3 +16,9 @@ my first multi-page website.
 
 ![screenshot](5.png)
 <br>
+
+![screenshot](6.png)
+<br>
+
+![screenshot](7.png)
+<br>
